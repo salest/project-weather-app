@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<header id="header">
+    <ul>
+        <li><a href="https://www.linkedin.com/in/tevin-sales/" target="_blank"><i class="fab fa-linkedin-in social-icon"></i></a></li>
+        <li><a href="https://github.com/salest" target="_blank"><i class="fab fa-github social-icon"></i></a></li>
+    </ul>
+    <a id="header-link" href="https://salest.github.io/" target="_blank">App Developed by: Tevin Sales</a>
+</header>
 
 <body>
     <div class="container">
+        <h1>Weather App</h1>
         <div class="search-container">
             <form id="search-form" method="post" action="">
-                <input type="text" name="search-location" class="search-bar" placeholder="Enter location">
+                <input type="text" name="search-location" class="search-bar" placeholder="Enter location" required minlength="3">
                 <input type="submit" value="Search" class="search-btn"></input>
             </form>
     
         </div>
         <div class="weather-image">
-            <img class="img-fluid" src="" alt="weather-image">
+            <img id="weather-image-icon" class="img-fluid" src="" alt="weather-image">
         </div>
         <div class="weather-card">
             <div class="location">
@@ -40,9 +50,7 @@
 </body>
 
 <footer id="footer">
-    <a href="https://salest.github.io/" target="_blank">App Developed by: Tevin Sales</a>
-    
-    <a href="http://www.freepik.com" target="_blank">Weather Icon Images Designed by Bamdewanto / Freepik</a>
+    <a id="footer-link" href="http://www.freepik.com" target="_blank">Weather Icon Images Designed by Bamdewanto / Freepik</a>
 </footer>
 
 </html>
